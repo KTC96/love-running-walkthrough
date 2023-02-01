@@ -25,6 +25,7 @@ h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* Navigation Links */
@@ -53,21 +54,46 @@ ul {
     color: inherit;
 }
 
-#menu, #logo {
-    line-height:75px;
+#menu,
+#logo {
+    line-height: 75px;
 }
 
 #menu a:hover {
-    border-bottom:1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Hero image */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
 #hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
- 
+
+    /* Animates zoom affect on loading page */
+    animation: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates the level zoom for hero image */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
 }
