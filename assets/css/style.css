@@ -37,7 +37,7 @@ h2 {
 
 /* Added float right to ul and left to li to ensure they are in correct order */
 
-ul {
+nav ul {
     float: right;
 
 
