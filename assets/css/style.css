@@ -296,6 +296,13 @@ For larger and medium screens from 1200px wide and down*/
         padding: 0;
     }
 
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
